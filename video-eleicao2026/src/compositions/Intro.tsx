@@ -15,14 +15,14 @@ export const Intro: React.FC = () => {
   return (
     <Transition durationInFrames={SCENE_TIMINGS.intro.duration}>
       <Background sectionLabel="Pesquisas eleitorais">
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%'}}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '100%'}}>
           <div
             style={{
               color: palette.accent,
-              fontSize: 28,
+              fontSize: 25,
               fontWeight: 800,
               marginBottom: 28,
-              letterSpacing: 1.8,
+              letterSpacing: 1.6,
               textTransform: 'uppercase',
               opacity: metaOpacity,
               transform: `translateY(${metaY}px)`,
@@ -30,12 +30,13 @@ export const Intro: React.FC = () => {
           >
             Explicador de dados
           </div>
-          <AnimatedText size={124}>Eleições 2026</AnimatedText>
-          <Subtitle size={48}>O que mostram as pesquisas mais recentes para presidente</Subtitle>
+          <AnimatedText size={104} lineHeight={0.98} maxWidth={820}>Eleições 2026</AnimatedText>
+          <Subtitle size={42} maxWidth={860}>O que mostram as pesquisas mais recentes para presidente</Subtitle>
           <div
             style={{
-              marginTop: 70,
-              width: 760,
+              marginTop: 72,
+              width: 780,
+              maxWidth: '100%',
               height: 8,
               background: `linear-gradient(90deg, ${palette.accent} 0%, ${palette.accent} 42%, ${palette.lines} 42%, ${palette.lines} 100%)`,
               opacity: metaOpacity,

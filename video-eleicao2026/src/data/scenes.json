@@ -4,8 +4,8 @@
   "fps": 30,
   "totalFrames": 900,
   "resolution": {
-    "width": 1920,
-    "height": 1080
+    "width": 1080,
+    "height": 1920
   },
   "editorialTone": "neutro, jornalístico e informativo",
   "sources": [

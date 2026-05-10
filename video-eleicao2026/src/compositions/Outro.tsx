@@ -15,21 +15,21 @@ export const Outro: React.FC = () => {
   return (
     <Transition durationInFrames={SCENE_TIMINGS.outro.duration}>
       <Background sectionLabel="Como ler pesquisas">
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%'}}>
-          <AnimatedText size={88} maxWidth={1240}>Pesquisas são retratos do momento</AnimatedText>
-          <Subtitle size={42} maxWidth={1220}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '100%'}}>
+          <AnimatedText size={74} lineHeight={1.02} maxWidth={880}>Pesquisas são retratos do momento</AnimatedText>
+          <Subtitle size={36} maxWidth={880}>
             Os números podem mudar conforme campanha, candidaturas, metodologia e margem de erro.
           </Subtitle>
           <div
             style={{
-              marginTop: 66,
-              paddingTop: 38,
+              marginTop: 62,
+              paddingTop: 36,
               borderTop: `1px solid ${palette.lines}`,
-              fontSize: 42,
-              lineHeight: 1.24,
+              fontSize: 37,
+              lineHeight: 1.22,
               fontWeight: 800,
               color: palette.text,
-              maxWidth: 1120,
+              maxWidth: 860,
               opacity,
               transform: `translateY(${y}px)`,
             }}

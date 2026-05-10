@@ -31,9 +31,9 @@ export const Background: React.FC<BackgroundProps> = ({sectionLabel, children}) 
           top: 0,
           left: 0,
           right: 0,
-          height: 94,
+          height: 128,
           borderBottom: `1px solid ${palette.lines}`,
-          background: 'rgba(255,255,255,0.72)',
+          background: 'rgba(255,255,255,0.78)',
         }}
       />
       <div
@@ -41,38 +41,44 @@ export const Background: React.FC<BackgroundProps> = ({sectionLabel, children}) 
           position: 'absolute',
           top: 0,
           left: 0,
-          width: 18,
-          height: '100%',
+          right: 0,
+          height: 16,
           backgroundColor: palette.accent,
         }}
       />
       <div
         style={{
           position: 'absolute',
-          top: 32,
-          left: 110,
+          top: 48,
+          left: 58,
+          right: 58,
           display: 'flex',
           alignItems: 'center',
-          gap: 18,
-          letterSpacing: 0.6,
+          gap: 16,
+          letterSpacing: 0.4,
         }}
       >
         <div
           style={{
-            width: 46,
-            height: 46,
+            width: 42,
+            height: 42,
             backgroundColor: palette.accent,
+            flex: '0 0 auto',
           }}
         />
-        <div style={{fontSize: 28, fontWeight: 800}}>News Brasil</div>
+        <div style={{fontSize: 28, fontWeight: 800, whiteSpace: 'nowrap'}}>News Brasil</div>
         {sectionLabel ? (
           <div
             style={{
-              paddingLeft: 18,
+              minWidth: 0,
+              paddingLeft: 16,
               borderLeft: `1px solid ${palette.lines}`,
               color: palette.secondary,
               fontSize: 24,
               fontWeight: 700,
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
             }}
           >
             {sectionLabel}
@@ -82,10 +88,10 @@ export const Background: React.FC<BackgroundProps> = ({sectionLabel, children}) 
       <main
         style={{
           position: 'absolute',
-          left: 260,
-          right: 260,
-          top: 150,
-          bottom: 120,
+          left: 58,
+          right: 58,
+          top: 178,
+          bottom: 148,
         }}
       >
         {children}
@@ -94,11 +100,12 @@ export const Background: React.FC<BackgroundProps> = ({sectionLabel, children}) 
         style={{
           position: 'absolute',
           left: 58,
-          bottom: 34,
-          fontSize: 22,
+          right: 58,
+          bottom: 44,
+          fontSize: 19,
+          lineHeight: 1.25,
           color: palette.secondary,
           opacity: 0.48,
-          maxWidth: 980,
         }}
       >
         {SOURCES_TEXT}

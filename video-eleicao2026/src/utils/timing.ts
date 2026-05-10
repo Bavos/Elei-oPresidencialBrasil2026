@@ -1,6 +1,6 @@
 export const FPS = 30;
-export const VIDEO_WIDTH = 1920;
-export const VIDEO_HEIGHT = 1080;
+export const VIDEO_WIDTH = 1080;
+export const VIDEO_HEIGHT = 1920;
 export const DURATION_IN_FRAMES = 900;
 
 export const SCENE_TIMINGS = {

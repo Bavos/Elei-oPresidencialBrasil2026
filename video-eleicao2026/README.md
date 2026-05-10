@@ -1,15 +1,15 @@
 # video-eleicao2026
 
-Projeto Remotion em React e TypeScript para um vídeo jornalístico de 30 segundos sobre pesquisas eleitorais para a Presidência do Brasil em 2026.
+Projeto Remotion em React e TypeScript para um vídeo jornalístico vertical de 30 segundos sobre pesquisas eleitorais para a Presidência do Brasil em 2026.
 
 ## Características
 
 - Duração: 30 segundos.
 - FPS: 30.
 - Total: 900 frames.
-- Resolução: 1920x1080.
+- Resolução: 1080x1920, formato vertical 9:16 para tela de celular.
 - Composição Remotion: `Eleicao2026`.
-- Estilo visual limpo, institucional e inspirado em página de notícia/explicador.
+- Estilo visual limpo, institucional e inspirado em página de notícia/explicador, adaptado para consumo mobile.
 - Sem áudio, voice-over ou trilha sonora.
 - Sem imagens binárias, fotos reais, vídeos externos, logos oficiais ou assets remotos.
 - Gráficos criados apenas com React, CSS e animações do Remotion.
