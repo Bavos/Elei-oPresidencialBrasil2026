@@ -1,8 +1,0 @@
-node_modules/
-dist/
-.cache/
-.env.local
-.env.*.local
-*.log
-output/*.mp4
-!output/.gitkeep
