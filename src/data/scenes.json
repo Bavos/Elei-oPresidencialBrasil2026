@@ -1,0 +1,66 @@
+{
+  "title": "Eleições 2026 — Pesquisas eleitorais para presidente",
+  "durationSeconds": 30,
+  "fps": 30,
+  "totalFrames": 900,
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "editorialTone": "neutro, jornalístico e informativo",
+  "sources": [
+    "BBC News Brasil",
+    "AtlasIntel/Bloomberg",
+    "Quaest",
+    "Datafolha",
+    "Real Time Big Data"
+  ],
+  "context": {
+    "referenceTitle": "Pesquisas eleitorais: Quem está à frente na disputa para Presidência? Veja no agregador da BBC News Brasil",
+    "summary": "Agregador jornalístico para acompanhar quem aparece à frente nas sondagens para a Presidência em 2026.",
+    "readingNote": "Pesquisas são retratos do momento e podem variar conforme instituto, metodologia, data de coleta e margem de erro."
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "startSecond": 0,
+      "endSecond": 6,
+      "title": "Eleições 2026",
+      "subtitle": "O que mostram as pesquisas mais recentes para presidente"
+    },
+    {
+      "id": "scene01",
+      "startSecond": 6,
+      "endSecond": 14,
+      "title": "Cenários de 1º turno",
+      "text": "Nos cenários de 1º turno, Lula aparece numericamente à frente em diferentes levantamentos.",
+      "data": [
+        {"institute": "Real Time Big Data", "round": "1º turno", "lula": 40, "flavioBolsonaro": 34},
+        {"institute": "Quaest", "round": "1º turno", "lula": 37, "flavioBolsonaro": 32, "ronaldoCaiado": 6, "romeuZema": 3},
+        {"institute": "Datafolha", "round": "1º turno", "lula": 26, "flavioBolsonaro": 16, "jairBolsonaro": 2, "ronaldoCaiado": 2, "outros": 5, "brancoNuloNenhum": 7, "naoSabe": 42},
+        {"institute": "AtlasIntel/Bloomberg", "round": "1º turno", "lula": 46.6, "flavioBolsonaro": 39.7}
+      ]
+    },
+    {
+      "id": "scene02",
+      "startSecond": 14,
+      "endSecond": 23,
+      "title": "Disputa apertada",
+      "text": "No 2º turno, os levantamentos indicam disputa apertada e cenários de empate técnico.",
+      "note": "Diferenças dentro da margem de erro devem ser lidas como empate técnico.",
+      "data": [
+        {"institute": "Real Time Big Data", "round": "2º turno", "flavioBolsonaro": 44, "lula": 43, "observation": "empate técnico dentro da margem de erro"},
+        {"institute": "Quaest", "round": "2º turno", "flavioBolsonaro": 42, "lula": 40, "observation": "empate técnico dentro da margem de erro"},
+        {"institute": "AtlasIntel/Bloomberg", "round": "2º turno", "lula": 47.5, "flavioBolsonaro": 47.8, "indecisosAbstencoes": 4.7, "observation": "empate técnico"}
+      ]
+    },
+    {
+      "id": "outro",
+      "startSecond": 23,
+      "endSecond": 30,
+      "title": "Pesquisas são retratos do momento",
+      "subtitle": "Os números podem mudar conforme campanha, candidaturas, metodologia e margem de erro.",
+      "finalText": "Confira sempre a fonte, a data da coleta e o instituto responsável."
+    }
+  ]
+}
